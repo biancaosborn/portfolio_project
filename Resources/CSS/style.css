@@ -58,3 +58,63 @@ nav li {
     align-items: center;
     flex-direction: row;
 }
+
+/* PROJECTS SECTION  */
+
+.project {
+    display:flex;
+    flex-direction: column;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+}
+
+.project1 {
+    display: flex;
+    flex: row;
+}
+
+.project-name {
+    height: 15rem;
+}
+
+.project-name p {
+    text-align: center;
+    color: #A589AA;
+    font-size: 3.5rem;
+    width: 100%;
+    padding: 5.25rem 0;
+}
+
+/* About me */
+
+.about-me {
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-container {
+    background-color: #A589AA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:20rem;
+    width: 60rem;
+}
+
+.welcome {
+    font-size: 3rem;
+}
+
+.welcome-para {
+    font-size: 1.3rem;
+    padding: 1rem 5rem 2rem;
+}
+
+/* Contact Info */
