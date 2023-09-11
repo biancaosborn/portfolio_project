@@ -11,10 +11,10 @@
         <div class="nav content">
             <nav>
                 <ul class="nav">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#home">Pojects</a></li>
-                    <li><a href="#home">About</a></li>
-                    <li><a href="#home">Contact</a></li>
+                    <li><a href="#banner">Home</a></li>
+                    <li><a href="#projects">Pojects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -22,7 +22,7 @@
 
     <!-- Banner -->
 
-    <div class="banner banner-flex">
+    <div class="banner banner-flex" id="banner">
             <div class="intro banner-flex">
                 <p>Welcome to my portfolio website! I'm a web developer specializing in modern, responsive websites with seamless user experiences. With expertise in front-end development, I bring clients' visions to life. Explore my portfolio to see how I can contribute to your web development needs. Let's bring your digital aspirations to life together!</p>
             </div>
@@ -33,7 +33,7 @@
 
     <!-- Projects section -->
 
-    <div class="project">
+    <div class="project" id="projects">
         <div class="project-name">
             <p>Projects</p>
         </div>
@@ -63,7 +63,7 @@
 
     <!-- About Me section -->
 
-    <div class="about-me">
+    <div class="about-me" id="about">
         <div class="about-me-container">
             <div class="about-me-intro">
                 <p class="welcome">Welcome to my portfolio website!</p>
@@ -74,8 +74,20 @@
 
     <!-- Contact Info -->
 
-    <div>
-        
+    <div class="contact-container" id="contact">
+        <div class="lets-chat">
+            <p class="lets-chat1">Let's chat! <br> Tell me about your <br> project</p>
+            <p>Let's create something together!</p>
+        </div>
+        <div class="form-section">
+            <p>Send us a message</p>
+            <form action="" method="get">
+                <input type="text" name="name" id="fullname" placeholder="Full Name">
+                <input type="text" name="email" id="email" placeholder="Email address">
+                <input type="text" name="subject" id="subject" placeholder="Subject">
+                <label for="project">Tell me about your ideas!</label>
+                <input type="text" name="about-project" id="project">            </form>
+        </div>
     </div>
 </body>
 </html>
