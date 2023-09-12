@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700&display=swap');
 html {
     font-size: 16px;
     font-family: 'Libre Franklin', sans-serif;
@@ -133,8 +133,12 @@ nav li {
 }
 
 .lets-chat {
-    border: 3px solid yellow;
-    /* background-color: white ; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 25rem;
+    width: 35rem;
 }
 
 .lets-chat p {
@@ -143,16 +147,40 @@ nav li {
 .lets-chat1 {
     font-size: 3.5rem;
     padding-bottom: 1rem;
-    font-weight: 700;
+    font-weight: 600;
+    width: 100%;
+}
+
+.email {
+    background-color: #eee2f1;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 22rem;
+    font-weight: 400;
+}
+
+.email img {
+    height: 3rem;
+    width: 3rem;
+    padding-right: .75rem;
+}
+
+.lets-create {
+    width: 100%;
+    font-weight: 500;
+    font-size: 1.25rem;
 }
 
 .form-section {
-    border: 3px solid pink;
+    border: 1px solid hsla(291, 16%, 60%, .5);
     background-color: white;
     border-radius: 1.5rem;
     padding: 1.5rem;
     height: 30rem;
-    width: 25rem;
+    width: 30rem;
     margin-left: 10rem;
 }
 
@@ -163,11 +191,15 @@ nav li {
 
 .form-section p {
     color: black;
+    font-weight: 500;
+    font-size: 1.75rem;
     padding-bottom: 1rem;
 }
 
 .form-section label {
    color: black;
+   font-weight: 500;
+   padding: 1rem 0;
 }
 
 .form-section input {
@@ -178,6 +210,28 @@ nav li {
     background-color: #eee2f1;
 }
 
-#project {
+#submit-button {
+    background-color: #A589AA;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 10rem;
+    height: 3rem;
+    border-radius: .5rem;
+}
+
+.input-text {
+    font-size: 1.25rem;
+    padding-left: .5rem;
+}
+
+.project-text {
+    color: black;
+    font-size: 1.25rem;
+    padding-left: .5rem; 
+    padding-top: .25rem;
+    color: black;
     height: 7rem;
+    border-radius: .3rem;
+    background-color: #eee2f1;
 }

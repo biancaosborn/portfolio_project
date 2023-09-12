@@ -76,17 +76,31 @@
 
     <div class="contact-container" id="contact">
         <div class="lets-chat">
-            <p class="lets-chat1">Let's chat! <br> Tell me about your <br> project</p>
-            <p>Let's create something together!</p>
+            <div class="lets-chat1">
+                <p>Let's chat! <br> Tell me about your <br> project</p>
+            </div>
+            <div class="lets-create">
+                <p>Let's create something together!</p>
+            </div>
+            <div class="email">
+                <div>
+                    <img src="/Users/biancaosborn/Desktop/codecademy/portfolio_project/Resources/images/email-icon.png" alt="email icon">
+                </div>
+                <div>
+                    <p>Email me at<br>biancaosborn@yahoo.com</p>
+                </div>
+            </div>
         </div>
         <div class="form-section">
             <p>Send us a message</p>
             <form action="" method="get">
-                <input type="text" name="name" id="fullname" placeholder="Full Name">
-                <input type="text" name="email" id="email" placeholder="Email address">
-                <input type="text" name="subject" id="subject" placeholder="Subject">
+                <input type="text" name="name" id="fullname" placeholder="Full Name" class="input-text">
+                <input type="text" name="email" id="email" placeholder="Email address" class="input-text">
+                <input type="text" name="subject" id="subject" placeholder="Subject" class="input-text">
                 <label for="project">Tell me about your ideas!</label>
-                <input type="text" name="about-project" id="project">            </form>
+                <textarea name="project-text" id="project-text" cols="10" rows="10" class="project-text"></textarea>
+                <input type="submit" value="Send message" id="submit-button">
+            </form>
         </div>
     </div>
 </body>
