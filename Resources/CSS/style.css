@@ -120,7 +120,7 @@ nav li {
 /* Contact Info */
 
 .contact-container {
-    border: 3px solid blue;
+    border: 1px solid hsla(291, 16%, 60%, .5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,6 +232,60 @@ nav li {
     padding-top: .25rem;
     color: black;
     height: 7rem;
+    max-height: 10rem;
+    min-height: 7rem;
     border-radius: .3rem;
     background-color: #eee2f1;
+    max-width: 29rem;
+    min-width: 29rem;
+}
+
+/* Footer */
+
+.footer-container {
+    background-color: white;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.footer-img-container img {
+    border: .1rem solid hsla(0, 0%, 50%, .5);
+    border-radius: 2rem;
+    height: 3rem;
+    width: 3rem;
+    padding: 0 .25rem;
+    margin: 0 1rem;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+
+}
+
+.footer-nav a{
+    color: black;
+    margin: 2rem;
+    font-size: 1.25rem;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+
+}
+
+.footer-copyright p {
+    color: grey;
 }
