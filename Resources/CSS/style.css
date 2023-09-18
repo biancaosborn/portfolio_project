@@ -31,6 +31,10 @@ html {
     margin-left: 5rem;
 }
 
+.short-logo {
+    display: none;
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -43,7 +47,35 @@ html {
 nav li {
     padding: 0rem 1.25em;
     list-style-type: none;
+}
+
+ @media only screen and (max-width: 1024px) {
+    nav li {
+        padding: 0 1rem;
     }
+}
+
+@media only screen and (max-width: 750px) {
+    .nav-container {
+        height: 4rem;
+    }
+
+    .nav-logo {
+        margin-left: 2.5rem;
+    }
+
+    .nav {
+        margin-right: 1.25rem ;
+    }
+
+    .short-logo {
+        display: block;
+    }
+
+    .long-logo {
+        display: none;
+    }
+}
 
 /* Banner */
 
@@ -77,6 +109,34 @@ nav li {
     border-radius: 30%;
 }
 
+@media only screen and (max-width: 1024px) {
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .intro {
+        font-size: 1.25rem;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .img {
+        margin-bottom: 2rem;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .img img {
+        height: 15rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+        width: 30rem;
+    }
+}
+
 /* PROJECTS SECTION  */
 
 .project {
@@ -104,6 +164,29 @@ nav li {
     font-size: 3.5rem;
     width: 100%;
     padding: 5.25rem 0;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .project1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-container {
+        width: 80%;
+        height: 80%;
+        padding: 4rem 0;
+    }
+
+    .container-start {
+        padding-top: 0;
+    }
+
+    .container-end {
+        padding-bottom: 0;
+    }
+
 }
 
 /* About me */
@@ -135,6 +218,34 @@ nav li {
     padding: 1rem 5rem 2rem;
 }
 
+@media only screen and (max-width: 1024px) {
+    .about-me {
+        height: 35rem;
+    }
+
+    .about-me-container {
+        width: 40rem;
+        height: 25rem;
+    }
+
+    .welcome {
+        font-size: 2.5rem;
+    }
+
+    .welcome-para {
+        font-size: 1.2rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .about-me-container {
+        width: 35rem;
+        margin: 0 1rem;
+    }
+}
+
 /* Contact Info */
 
 .contact-container {
@@ -156,18 +267,22 @@ nav li {
     justify-content: space-around;
     align-items: flex-start;
     height: 25rem;
-    width: 35rem;
+    width: 45rem;
+    margin-left: 2rem;
 }
 
 .lets-chat p {
     color: black;
 }
+
 .lets-chat1 {
     font-size: 3.5rem;
     padding-bottom: 1rem;
     font-weight: 600;
     width: 100%;
 }
+
+.chat1 {}
 
 .email {
     background-color: #eee2f1;
@@ -198,8 +313,10 @@ nav li {
     border-radius: 1.5rem;
     padding: 1.5rem;
     height: 30rem;
-    width: 30rem;
-    margin-left: 10rem;
+    max-width: 30rem;
+    min-width: 25rem;
+    width: 30%;
+    margin-right: 2rem;
 }
 
 .form-section form {
@@ -255,7 +372,42 @@ nav li {
     border-radius: .3rem;
     background-color: #eee2f1;
     max-width: 29rem;
-    min-width: 29rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .lets-chat1 {
+        display: none;
+    }
+
+    .lets-chat {
+        height: 10rem;
+        width: 100%;
+        margin: 0;
+    }
+
+    .lets-create {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .email {
+        display: none;
+    }
+
+    .form-section p {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    .lets-create {
+        font-size: 2rem;
+    }
 }
 
 /* Footer */
